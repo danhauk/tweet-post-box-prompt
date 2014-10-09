@@ -44,18 +44,20 @@ else {
 // This function adds the tweet prompt box below the content
 add_action( 'wp_footer', 'tweet_post_box_prompt_popup' );
 function tweet_post_box_prompt_popup() {
-	if ( get_option( 'tweet_post_box_prompt_theme' ) == 'dark' ) {
-		$dark_theme_class = ' class="tweet-post-box-prompt-dark"';
-	} else {
-		$dark_theme_class = '';
-	}
+	if ( is_single() ) {
+		if ( get_option( 'tweet_post_box_prompt_theme' ) == 'dark' ) {
+			$dark_theme_class = ' class="tweet-post-box-prompt-dark"';
+		} else {
+			$dark_theme_class = '';
+		}
 
-	echo '<div id="tweet-post-box-prompt"' . $dark_theme_class . '>
-			<h4>' . get_option( 'tweet_post_box_prompt_heading' ) . '</h4>
-			<p>"' . get_the_title() . '" by @' . get_option( 'tweet_post_box_prompt_username' ) . '</p>
-			<a href="javascript:;" class="tweet-post-box-prompt-button" onclick="tweet_post_box_prompt_open_win(\'' . tweet_post_box_prompt_create_tweet() . '\');"><span>Tweet</span></a>
-			<a href="javascript:;" class="tweet-post-box-prompt-close">Close</a>
-		  </div>';
+		echo '<div id="tweet-post-box-prompt"' . $dark_theme_class . '>
+				<h4>' . get_option( 'tweet_post_box_prompt_heading' ) . '</h4>
+				<p>"' . get_the_title() . '" by @' . get_option( 'tweet_post_box_prompt_username' ) . '</p>
+				<a href="javascript:;" class="tweet-post-box-prompt-button" onclick="tweet_post_box_prompt_open_win(\'' . tweet_post_box_prompt_create_tweet() . '\');"><span>Tweet</span></a>
+				<a href="javascript:;" class="tweet-post-box-prompt-close">Close</a>
+			  </div>';
+	}
 }
 
 // create the tweet intent URL
