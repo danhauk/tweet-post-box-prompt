@@ -1,16 +1,21 @@
 jQuery(function($) {
 	var body_height = $(window).outerHeight();
 	var window_scroll;
+	var tweet_post_box = $('#tweet-post-box-prompt');
 
 	$(window).scroll(function() {
 		window_scroll = $(window).scrollTop();
 
 		if ( window_scroll > body_height / 2 ) {
-			$('#tweet-post-box-prompt').fadeIn();
+			tweet_post_box.not( '.closed' ).fadeIn();
 		}
-		else {
-			$('#tweet-post-box-prompt').fadeOut();
-		}
+	});
+
+	$('.tweet-post-box-prompt-close').click(function() {
+		tweet_post_box.animate({'bottom': -50, 'opacity': 0}, 300);
+		setTimeout(function() {
+			tweet_post_box.hide().addClass('closed');
+		}, 300);
 	});
 });
 
