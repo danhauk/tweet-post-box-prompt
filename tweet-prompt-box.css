@@ -1,26 +1,21 @@
-#tweet-post-box-prompt {
+#tweet-prompt-box {
 	background: #fff;
-	border: 1px solid #ccc;
-	-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
-	   -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
-		-ms-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
-		 -o-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
-			box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-		-ms-border-radius: 3px;
-		 -o-border-radius: 3px;
-			border-radius: 3px;
+	border-top: 1px solid #ccc;
+	-webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+	   -moz-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+		-ms-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+		 -o-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
 	color: #444;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	position: fixed;
-	bottom: 25px;
-	right: 25px;
+	bottom: 0;
+	right: 0;
 	display: none;
-	width: 250px;
+	width: 100%;
 }
 
-#tweet-post-box-prompt h4 {
+#tweet-prompt-box h4 {
 	background: #f5f5f5;
 	font-size: 16px;
 	font-weight: bold;
@@ -29,13 +24,13 @@
 	padding: 15px;
 }
 
-#tweet-post-box-prompt p {
+#tweet-prompt-box p {
 	font-size: 13px;
 	margin: 0;
 	padding: 10px 15px;
 }
 
-#tweet-post-box-prompt .tweet-post-box-prompt-button {
+#tweet-prompt-box .tweet-prompt-box-button {
 	background: #55acee;
 	border: 1px solid #55acee;
 	-webkit-border-radius: 3px;
@@ -53,7 +48,7 @@
 	transition: all 0.5s;
 }
 
-#tweet-post-box-prompt .tweet-post-box-prompt-button span {
+#tweet-prompt-box .tweet-prompt-box-button span {
 	background: url(twitter-white.png) no-repeat left center;
 	background-size: 16px;
 	display: inline-block;
@@ -63,12 +58,12 @@
 	padding-left: 24px;
 }
 
-#tweet-post-box-prompt .tweet-post-box-prompt-button:hover {
+#tweet-prompt-box .tweet-prompt-box-button:hover {
 	background: #64BAFC;
 	border-color: #3a7bad;
 }
 
-.tweet-post-box-prompt-close {
+.tweet-prompt-box-close {
 	background: url(close-x.png) no-repeat;
 	background-size: 16px;
 	display: block;
@@ -81,12 +76,31 @@
 	width: 16px;
 }
 
-#tweet-post-box-prompt.tweet-post-box-prompt-dark {
+#tweet-prompt-box.tweet-prompt-box-dark {
 	background: #292f33;
 	border-color: #292f33;
 	color: #e1e8ed;
 }
 
-#tweet-post-box-prompt.tweet-post-box-prompt-dark h4 {
+#tweet-prompt-box.tweet-prompt-box-dark h4 {
 	background: rgba(255, 255, 255, 0.1);
+}
+
+@media all and (min-width: 590px) {
+	#tweet-prompt-box {
+		border: 1px solid #ccc;
+		-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+		   -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+			-ms-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+			 -o-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+				box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			 -o-border-radius: 3px;
+				border-radius: 3px;
+		bottom: 25px;
+		right: 25px;
+		width: 250px;
+	}
 }

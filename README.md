@@ -1,4 +1,4 @@
-Tweet Post Box Prompt WordPress Plugin
+Tweet Prompt Box WordPress Plugin
 =======================
 
 Show readers a prompt in the corner of their browser to easily tweet a post if they like it. Choose from a light or dark theme to match your site and customize the call to action.

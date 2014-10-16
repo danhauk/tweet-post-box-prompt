@@ -1,4 +1,4 @@
-.tweet-post-box-prompt-theme-admin-select {
+.tweet-prompt-box-theme-admin-select {
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 		-ms-border-radius: 3px;
@@ -10,7 +10,7 @@
 	padding: 15px;
 }
 
-.tweet-post-box-preview-active {
+.tweet-prompt-box-preview-active {
 	border-color: #55acee;
 	-webkit-box-shadow: 0 0 4px #55acee;
 	   -moz-box-shadow: 0 0 4px #55acee;
@@ -19,7 +19,7 @@
 			box-shadow: 0 0 4px #55acee;
 }
 
-.tweet-post-box-prompt-theme-admin {
+.tweet-prompt-box-theme-admin {
 	background: #fff;
 	border: 1px solid #ccc;
 	-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
@@ -39,7 +39,7 @@
 	width: 250px;
 }
 
-.tweet-post-box-prompt-theme-admin h4 {
+.tweet-prompt-box-theme-admin h4 {
 	background: #f5f5f5;
 	font-size: 16px;
 	font-weight: bold;
@@ -48,13 +48,13 @@
 	padding: 15px;
 }
 
-.tweet-post-box-prompt-theme-admin p {
+.tweet-prompt-box-theme-admin p {
 	font-size: 13px;
 	margin: 0;
 	padding: 10px 15px;
 }
 
-.tweet-post-box-prompt-theme-admin .tweet-post-box-prompt-button {
+.tweet-prompt-box-theme-admin .tweet-prompt-box-button {
 	background: #55acee;
 	border: 1px solid #55acee;
 	-webkit-border-radius: 3px;
@@ -72,7 +72,7 @@
 	transition: all 0.5s;
 }
 
-.tweet-post-box-prompt-theme-admin .tweet-post-box-prompt-button span {
+.tweet-prompt-box-theme-admin .tweet-prompt-box-button span {
 	background: url(twitter-white.png) no-repeat left center;
 	background-size: 16px;
 	display: inline-block;
@@ -82,12 +82,12 @@
 	padding-left: 24px;
 }
 
-.tweet-post-box-prompt-theme-admin .tweet-post-box-prompt-button:hover {
+.tweet-prompt-box-theme-admin .tweet-prompt-box-button:hover {
 	background: #64BAFC;
 	border-color: #3a7bad;
 }
 
-.tweet-post-box-prompt-close {
+.tweet-prompt-box-close {
 	background: url(close-x.png) no-repeat;
 	background-size: 16px;
 	display: block;
@@ -100,16 +100,16 @@
 	width: 16px;
 }
 
-.tweet-post-box-prompt-theme-admin input {
+.tweet-prompt-box-theme-admin input {
 	display: none;
 }
 
-.tweet-post-box-prompt-dark-preview {
+.tweet-prompt-box-dark-preview {
 	background: #292f33;
 	border-color: #292f33;
 	color: #e1e8ed;
 }
 
-.tweet-post-box-prompt-dark-preview h4 {
+.tweet-prompt-box-dark-preview h4 {
 	background: rgba(255, 255, 255, 0.1);
 }
